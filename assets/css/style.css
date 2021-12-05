@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* display: flex; */
+    font-family: "Poppins", sans-serif;
+  }
+
+body > div {
+    margin: 10% auto 0 ;
+    max-width: 720px;
+}
+
+.tabs {
+    /* display: flex; */
+    position: relative;
+}
+
+.tab-item {
+    display: inline-block;
+    color: #c23564;
+    padding: 16px 20px ;
+    font-size: 20px;
+    opacity: 0.6;
+    /* text-align: center; */
+}
+
+.tab-item:hover {
+    background-color: rgba(194, 53, 100, 0.05);
+    cursor: pointer;
+    opacity: 1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* border-color: rgba(194, 53, 100, 0.1); */
+
+}
+
+.tab-icon {
+    font-size: 24px;
+    width: 32px;
+}
+
+.tabs .active { /* khi chọn vào từng item thì nó sẽ đậm item đang chọn */
+    opacity: 1;
+}
+
+.tabs .line {
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #c23564;
+    transition: all 0.2s ease;
+    position: absolute;
+}
+
+.tab-content {
+    padding: 30px 0;
+}
+
+.tab-pane {
+    color: #333;
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
